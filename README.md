@@ -1,8 +1,7 @@
 # VDC SETUP
 
 ```bash
-#!/bin/bash
-
+git clone https://[TOKEN]@github.com/VasieDma/btcpayserver-docker
 BTCPAY_HOST="pay.vasie-dma.com"
 
 export BTCPAY_HOST="$BTCPAY_HOST"
