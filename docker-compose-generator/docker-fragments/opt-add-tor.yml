@@ -83,6 +83,8 @@ services:
       - "tor_datadir:/home/tor/.tor"
       - "tor_torrcdir:/usr/local/etc/tor"
       - "tor_servicesdir:/var/lib/tor/hidden_services"
+    networks:
+    - proxy
 
   clightning_bitcoin:
     environment:
@@ -118,6 +120,8 @@ services:
     entrypoint: /usr/local/bin/docker-gen -notify-sighup tor -watch -wait 5s:30s /etc/docker-gen/templates/torrc.tmpl /usr/local/etc/tor/torrc-2
     links:
       - tor
+    networks:
+    - proxy
 
   lnd_bitcoin:
     environment:
