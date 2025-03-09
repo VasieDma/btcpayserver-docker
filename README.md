@@ -2,6 +2,28 @@
 
 #### Start accepting Bitcoin today with BTCPay Server! This guide will walk you through the installation.
 
+# VDC SETUP
+
+```bash
+#!/bin/bash
+
+BTCPAY_HOST="pay.vasie-dma.com"
+
+export BTCPAY_HOST="$BTCPAY_HOST"
+export NBITCOIN_NETWORK="mainnet"
+export BTCPAYGEN_CRYPTO1="btc"
+export BTCPAYGEN_CRYPTO2="ltc"
+export BTCPAYGEN_LIGHTNING="clightning"
+export BTCPAYGEN_REVERSEPROXY="none"
+
+export REVERSEPROXY_DEFAULT_HOST="$BTCPAY_HOST"
+
+cd btcpayserver-docker
+
+echo "Running BTCPay setup script..."
+. ./btcpay-setup.sh -i
+```
+
 # Introduction
 
 While [our instructions](https://docs.btcpayserver.org/LunaNodeWebDeployment/) cover how to install BTCPayServer in one click on Azure or Lunanode, BTCPay Server is not limited to those options.
