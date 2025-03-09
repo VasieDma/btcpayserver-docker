@@ -1,7 +1,3 @@
-[![CircleCI](https://circleci.com/gh/btcpayserver/btcpayserver-docker.svg?style=svg)](https://app.circleci.com/pipelines/github/btcpayserver/btcpayserver-docker)
-
-#### Start accepting Bitcoin today with BTCPay Server! This guide will walk you through the installation.
-
 # VDC SETUP
 
 ```bash
@@ -23,6 +19,10 @@ cd btcpayserver-docker
 echo "Running BTCPay setup script..."
 . ./btcpay-setup.sh -i
 ```
+
+[![CircleCI](https://circleci.com/gh/btcpayserver/btcpayserver-docker.svg?style=svg)](https://app.circleci.com/pipelines/github/btcpayserver/btcpayserver-docker)
+
+#### Start accepting Bitcoin today with BTCPay Server! This guide will walk you through the installation.
 
 # Introduction
 
