@@ -20,6 +20,8 @@ services:
     volumes:
       - "litecoin_datadir:/data"
       - "litecoin_wallet_datadir:/walletdata"
+    networks:
+      - proxy
   nbxplorer:
     environment:
       NBXPLORER_CHAINS: "ltc"

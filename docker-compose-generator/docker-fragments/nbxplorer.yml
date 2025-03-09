@@ -18,6 +18,8 @@ services:
       - postgres
     volumes:
       - "nbxplorer_datadir:/datadir"
+    networks:
+      - proxy
 
 volumes:
   nbxplorer_datadir:

@@ -33,6 +33,8 @@ services:
       - "9736"
     links:
       - bitcoind
+    networks:
+    - proxy
 
   bitcoin_rtl:
     image: shahanafarooqui/rtl:v0.15.4
@@ -56,6 +58,8 @@ services:
       - "clightning_bitcoin_rtl_datadir:/data"
     expose:
       - "3000"
+    networks:
+    - proxy
 
   mempool_api:
     environment:

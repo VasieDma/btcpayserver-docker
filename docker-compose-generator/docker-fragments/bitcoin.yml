@@ -25,6 +25,8 @@ services:
     volumes:
       - "bitcoin_datadir:/data"
       - "bitcoin_wallet_datadir:/walletdata"
+    networks:
+      - proxy
   nbxplorer:
     environment:
       NBXPLORER_CHAINS: "btc"
