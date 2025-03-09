@@ -2,20 +2,16 @@
 
 ```bash
 git clone https://[TOKEN]@github.com/VasieDma/btcpayserver-docker
-BTCPAY_HOST="pay.vasie-dma.com"
 
-export BTCPAY_HOST="$BTCPAY_HOST"
+export BTCPAY_HOST="pay.vasie-dma.com"
 export NBITCOIN_NETWORK="mainnet"
 export BTCPAYGEN_CRYPTO1="btc"
 export BTCPAYGEN_CRYPTO2="ltc"
 export BTCPAYGEN_LIGHTNING="clightning"
 export BTCPAYGEN_REVERSEPROXY="none"
-
 export REVERSEPROXY_DEFAULT_HOST="$BTCPAY_HOST"
 
 cd btcpayserver-docker
-
-echo "Running BTCPay setup script..."
 . ./btcpay-setup.sh -i
 ```
 
